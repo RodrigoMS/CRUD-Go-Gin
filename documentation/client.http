@@ -1,0 +1,43 @@
+### Executar o Docker Composer
+### docker-compose up --build
+### Fechar os containers em execução
+### docker-compose down
+
+### Listar todos os items
+GET http://localhost:8080/items
+Accept: application/json
+
+###
+
+### Criar um novo item
+POST http://localhost:8080/items
+Content-Type: application/json
+
+{
+    "name": "Item1",
+    "price": 100
+}
+
+###
+
+### Obter um item por ID
+GET http://localhost:8080/items/4
+Accept: application/json
+
+###
+
+### Atualizar um item
+PUT http://localhost:8080/items/3
+Content-Type: application/json
+
+{
+    "name": "ItemUpdated",
+    "price": 150
+}
+
+###
+
+### Deletar um item por ID
+DELETE http://localhost:8080/items/2
+Accept: application/json
+
